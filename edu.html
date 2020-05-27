@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- stylesheet css -->
+    <link rel="stylesheet" href="./css/stylesheet.css">
+
+    <!-- CDN Google font -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+   <!-- Font Awesome -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  
+  <!-- CDN Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+  <!-- for icon -->
+  <script src="https://kit.fontawesome.com/54218bd639.js" crossorigin="anonymous"></script>
+
+  <!-- Link Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <!-- For Barchart -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script>
+      $(document).ready(function(){
+          barChart();
+
+          $(window).resize(function(){
+          barChart();
+          });
+
+          function barChart(){
+              $('.bar-chart').find('.progress').each  (function(){
+                  var itemProgress = $(this),
+                  itemProgressWidth = $(this).parent().width() * ($(this).data('persen') / 100);
+                  itemProgress.css('width', itemProgressWidth);
+              });
+          }
+      });
+  </script>
+  <title>Tatin</title>
+</head>
+<body>
+    
+    <!-- Header -->
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <h1>Resume</h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="index.html">Beranda</a>
+                    <a class="nav-item nav-link" href="profile.html">Profil</a>
+                    <a class="nav-item nav-link" href="edu.html">Riwayat Pendidikan</a>
+                    <a class="nav-item nav-link" href="pelatihan.html">Riwayat Pelatihan</a>
+                    <a class="nav-item nav-link" href="skill.html">Keterampilan</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Riwayat pendidikan -->
+    <section class="educational-details">
+        <div class="container">
+            <h2>Riwayat Pendidikan</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="timeline">
+                        <li>
+                            <h4>2008 - 2009</h4>
+                            <p>
+                                Saya memulai Pendidikan Ketika berusia 5 tahun di TK Anakita yang berlokasi di Sengkang,Kab. Wajo. Saya menempuh Pendidikan TK selama setahun. Sejak TK, saya sudah menyukai kesenian, sampai akhirnya saya ditunjuk untuk menari di acara perpisahan kami
+                            </p>
+                        </li>
+                        <li>
+                            <h4>2009 - 2014</h4>
+                            <p>
+                                Setelah lulus dari Pendidikan di TK Anakita, saya melanjutkan Pendidikan ke tingkat Sekolah Dasar pada tahun 2009, tepatnya di SDN 2 Maddukkeleng. Saya menempuh Pendidikan SD selama 5 tahun. Hal itu karena saya mengikuti program kelas Akselerasi, sehingga mengalami percepatan setahun. Sejak SD, saya mulai mengikuti kegiatan kesenian da juga lomba akademik. Seperti lomba bernyanyi dan juga lomba mata pelajaran. Selain itu, pada saat perpisahan SD, saya ditunjuk untuk mengisi acara hiburan yaitu menyanyi da juga tari kreasi. Selama SD, saya selalu menduduki peringkat 3 besar.
+                            </p>
+                        </li>
+                        <li>
+                            <h4>2014 - 2016</h4>
+                            <p>
+                                Setelah lulus Sekolah Dasar, saya melanjutkan Pendidikan saya di SMPN 1 Sengkang. Saya menempuh Pendidikan SMP selama 2 tahun. Lagi lagi, saya mengikuti program kelas Akselerasi juga, sehingga saya tidak lagi menempuh Pendidikan SMP selama 3 tahun melainkan hanya 2 tahun. Di SMP, saya juga mengikuti lomba nyanyi untuk mewakili teman kelompok saya pada saat awal masuk SMP tepatnya pada kegiatan Masa Orientasi dan Pengenalan Lingkungan Sekolah. Di SMP, saya juga selalu menduduki peringkat 5 besar, dan pada saat pengumuman kelulusan, saya berhasil meraih peringkat kedua nilai terbaik untuk Ujian Sekolah. Saya juga aktif mengikuti kegiatan organisasi, seperti OSIS.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="timeline">
+                        <li>
+                            <h4>2016 - 2019</h4>
+                            <p>
+                                Setelah lulus Sekolah Menengah Pertama, saya melanjutkan Pendidikan saya di SMAN 7 Wajo. Saya menempuh Pendidikan SMA selama 3 tahun, yang tidak lagi mengikuti program kelas Akselerasi, melainkan kelas khusus. Tesnya sama saja untuk memasuki program kelas Akselerasi, namun bedanya sudah tidak mengalami percepatan. Di SMA, saya aktif juga berorganisasi seperti Karya Ilmiah Remaja (KIR) dan Pusat Indormasi da Konseling Remaja (PIK-R). Saya juga mengikuti event nasional, yaitu Positive Youth Project.
+                            </p>
+                        </li>
+                        <li>
+                            <h4>2019 - Sekarang</h4>
+                            <p>
+                                Saat ini, saya tengah menempuh Pendidikan di Universitas Hasanuddin, Fakultas Pertanian, Program Studi Agribisnis.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-text col-12">
+            <p>&copy; Tatin</p>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
